@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Luas Bangun Datar</title>
+</head>
+<body>
+
+    <h1>Menghitung Luas Bangun Datar</h1>
+
+    <script>
+
+        // Fungsi untuk menghitung luas persegi panjang
+        // Rumus: panjang × lebar
+        function luasPersegiPanjang(panjang, lebar) {
+            return panjang * lebar;
+        }
+
+        // Fungsi untuk menghitung luas bujur sangkar
+        // Rumus: sisi × sisi
+        function luasBujurSangkar(sisi) {
+            return sisi * sisi;
+        }
+
+        // Fungsi untuk menghitung luas segitiga
+        // Rumus: 1/2 × alas × tinggi
+        function luasSegitiga(alas, tinggi) {
+            return 0.5 * alas * tinggi;
+        }
+
+
+        // Menentukan nilai panjang dan lebar persegi panjang
+        let panjang = 10;
+        let lebar = 5;
+
+        // Menentukan nilai sisi bujur sangkar
+        let sisi = 7;
+
+        // Menentukan nilai alas dan tinggi segitiga
+        let alas = 8;
+        let tinggi = 6;
+
+
+        // Menghitung luas masing-masing bangun datar
+        let hasilPersegiPanjang = luasPersegiPanjang(panjang, lebar);
+        let hasilBujurSangkar = luasBujurSangkar(sisi);
+        let hasilSegitiga = luasSegitiga(alas, tinggi);
+
+
+        // Menampilkan judul
+        document.write("<h2>Hasil Perhitungan Luas</h2>");
+
+
+        // Menampilkan informasi persegi panjang
+        document.write("<h3>1. Persegi Panjang</h3>");
+        document.write("Panjang = " + panjang + "<br>");
+        document.write("Lebar = " + lebar + "<br>");
+        document.write("Luas = " + hasilPersegiPanjang + "<br>");
+
+
+        // Menampilkan informasi bujur sangkar
+        document.write("<h3>2. Bujur Sangkar</h3>");
+        document.write("Sisi = " + sisi + "<br>");
+        document.write("Luas = " + hasilBujurSangkar + "<br>");
+
+
+        // Menampilkan informasi segitiga
+        document.write("<h3>3. Segitiga</h3>");
+        document.write("Alas = " + alas + "<br>");
+        document.write("Tinggi = " + tinggi + "<br>");
+        document.write("Luas = " + hasilSegitiga + "<br>");
+
+    </script>
+
+</body>
+</html>
