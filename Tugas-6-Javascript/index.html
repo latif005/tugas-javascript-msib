@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manajemen Data Mahasiswa</h1>
+        <p class="deskripsi">
+            Sistem Sederhana untuk melihat, menambah,
+            dan menghapus data mahasiswa
+        </p>
+
+        <div class="aksi">
+            <button onclick="lihatData()">
+                Lihat Data
+            </button>
+
+            <button onclick="tambahData()">
+                Tambah 2 Data
+            </button>
+        </div>
+
+        <div class="hapus">
+            <input
+                type="email"
+                id="emailHapus"
+                placeholder="Masukkan email yang ingin dihapus"
+            >
+            
+            <button class="btn-hapus" onclick="hapusData()">
+                Hapus Data
+            </button>
+        </div>
+
+        <div class="tabel-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Umur</th>
+                        <th>Alamat</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="tempatData"></tbody>
+            </table>
+        </div>
+
+        <p class="catatan">
+            Data awal berjumlah 10 mahasiswa
+        </p>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="controller.js"></script>
+</body>
+</html>
